@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Launch Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="logo-placeholder">
+            <svg width="50" height="50" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                <rect x="10" y="10" width="80" height="30" rx="5"/>
+                <circle cx="35" cy="70" r="20"/>
+                <rect x="60" y="55" width="30" height="30" rx="5" transform="rotate(45 75 70)"/>
+            </svg>
+        </div>
+        <span class="studio-name">peelish studios</span>
+    </header>
+
+    <div class="container">
+        <a id="video-section-link" class="section video-section" data-icon="theaters" data-target-page="video-detail" data-color-class="is-filling-video">
+            <div class="content">
+                <div class="icon-wrapper"><span class="material-symbols-outlined">theaters</span></div>
+                <h1 class="section-title">Video</h1>
+            </div>
+        </a>
+        <a id="code-section-link" class="section code-section" data-icon="terminal" data-target-page="code-detail" data-color-class="is-filling-code">
+            <div class="content">
+                <div class="icon-wrapper"><span class="material-symbols-outlined">terminal</span></div>
+                <h1 class="section-title">Code</h1>
+            </div>
+        </a>
+        <a id="design-section-link" class="section design-section" data-icon="palette" data-target-page="design-detail" data-color-class="is-filling-design">
+            <div class="content">
+                <div class="icon-wrapper"><span class="material-symbols-outlined">palette</span></div>
+                <h1 class="section-title">Design</h1>
+            </div>
+        </a>
+    </div>
+
+    <div class="loading-overlay" id="loadingOverlay">
+        <span class="material-symbols-outlined animated-icon" id="animatedIconLoader"></span>
+    </div>
+
+    <div id="video-detail" class="detail-page">
+        <h2>My Video Projects</h2>
+        <p class="intro-paragraph">Welcome! This space is dedicated to showcasing my video projects. You'll find examples of my work in narrative storytelling, promotional content creation, dynamic motion graphics, and detailed post-production.</p>
+        <h3 class="collaborators-title">Collaborators</h3>
+        <div class="scrolling-collaborators-container">
+            <div class="scrolling-collaborators-track">
+                <svg viewBox="0 0 100 50"><circle cx="25" cy="25" r="20" /><rect x="50" y="10" width="40" height="30" rx="5"/></svg>
+                <svg viewBox="0 0 100 50"><polygon points="10,10 40,40 10,40" /><polygon points="50,10 80,10 65,40" /></svg>
+                <svg viewBox="0 0 100 50"><path d="M10 25 Q 25 10 40 25 T 70 25" stroke-width="5" stroke="currentColor" fill="transparent" /></svg>
+                <svg viewBox="0 0 100 50"><ellipse cx="30" cy="25" rx="20" ry="10"/><ellipse cx="70" cy="25" rx="10" ry="20"/></svg>
+                <svg viewBox="0 0 100 50"><rect x="10" y="10" width="20" height="30"/><rect x="40" y="10" width="20" height="30"/><rect x="70" y="10" width="20" height="30"/></svg>
+                <svg viewBox="0 0 100 50"><circle cx="25" cy="25" r="20" /><rect x="50" y="10" width="40" height="30" rx="5"/></svg>
+                <svg viewBox="0 0 100 50"><polygon points="10,10 40,40 10,40" /><polygon points="50,10 80,10 65,40" /></svg>
+                <svg viewBox="0 0 100 50"><path d="M10 25 Q 25 10 40 25 T 70 25" stroke-width="5" stroke="currentColor" fill="transparent" /></svg>
+                <svg viewBox="0 0 100 50"><ellipse cx="30" cy="25" rx="20" ry="10"/><ellipse cx="70" cy="25" rx="10" ry="20"/></svg>
+                <svg viewBox="0 0 100 50"><rect x="10" y="10" width="20" height="30"/><rect x="40" y="10" width="20" height="30"/><rect x="70" y="10" width="20" height="30"/></svg>
+            </div>
+        </div>
+        <div class="detail-page-content-wrapper">
+            <div class="main-content-area">
+                <h3>Featured Projects</h3>
+                <div class="project-gallery">
+                    <div class="project-card">
+                        <div class="placeholder-image">Video Project 1 Thumbnail</div>
+                        <h4>Short Film: "The Last Byte"</h4>
+                        <p>A compelling narrative short exploring themes of digital legacy. Full editing, color grading, and sound design.</p>
+                    </div>
+                    <div class="project-card">
+                        <div class="placeholder-image">Video Project 2 Thumbnail</div>
+                        <h4>Brand Promo: "InnovateX Launch"</h4>
+                        <p>High-energy promotional video for a tech startup, featuring motion graphics and client testimonials.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-area">
+                <h3>Clients</h3>
+                <ul class="tools-list">
+                    <li>Tech Startup Inc.</li>
+                    <li>Creative Agency X</li>
+                </ul>
+                <h3>Primary Tools</h3>
+                <ul class="tools-list">
+                    <li>DaVinci Resolve Studio</li>
+                    <li>Affinity Photo</li>
+                    <li>Affinity Designer</li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-contact-trigger-container">
+            <button class="page-contact-button">Contact Me</button>
+        </div>
+        <div class="back-button-container"><button class="back-button" data-target-page="main">Back to Home</button></div>
+    </div>
+
+    <div id="code-detail" class="detail-page">
+        <h2>Coding Projects</h2>
+        <p class="intro-paragraph">Explore a diverse range of software and web development projects. This gallery showcases interactive applications, utility tools, and experiments, highlighting problem-solving abilities and technical expertise.</p>
+        <h3 class="collaborators-title">Collaborators</h3>
+        <div class="scrolling-collaborators-container">
+            <div class="scrolling-collaborators-track">
+                <svg viewBox="0 0 100 50"><circle cx="25" cy="25" r="20" /><rect x="50" y="10" width="40" height="30" rx="5"/></svg>
+                <svg viewBox="0 0 100 50"><polygon points="10,10 40,40 10,40" /><polygon points="50,10 80,10 65,40" /></svg>
+                <svg viewBox="0 0 100 50"><path d="M10 25 Q 25 10 40 25 T 70 25" stroke-width="5" stroke="currentColor" fill="transparent" /></svg>
+                <svg viewBox="0 0 100 50"><ellipse cx="30" cy="25" rx="20" ry="10"/><ellipse cx="70" cy="25" rx="10" ry="20"/></svg>
+                <svg viewBox="0 0 100 50"><rect x="10" y="10" width="20" height="30"/><rect x="40" y="10" width="20" height="30"/><rect x="70" y="10" width="20" height="30"/></svg>
+                <svg viewBox="0 0 100 50"><circle cx="25" cy="25" r="20" /><rect x="50" y="10" width="40" height="30" rx="5"/></svg>
+                <svg viewBox="0 0 100 50"><polygon points="10,10 40,40 10,40" /><polygon points="50,10 80,10 65,40" /></svg>
+                <svg viewBox="0 0 100 50"><path d="M10 25 Q 25 10 40 25 T 70 25" stroke-width="5" stroke="currentColor" fill="transparent" /></svg>
+                <svg viewBox="0 0 100 50"><ellipse cx="30" cy="25" rx="20" ry="10"/><ellipse cx="70" cy="25" rx="10" ry="20"/></svg>
+                <svg viewBox="0 0 100 50"><rect x="10" y="10" width="20" height="30"/><rect x="40" y="10" width="20" height="30"/><rect x="70" y="10" width="20" height="30"/></svg>
+            </div>
+        </div>
+        <div class="detail-page-content-wrapper sidebar-left"> 
+            <div class="sidebar-area">
+                <h3>Core Technologies</h3>
+                <ul class="tools-list">
+                    <li>React</li>
+                    <li>Firebase</li>
+                    <li>Supabase</li>
+                    <li>GitHub</li>
+                </ul>
+                <h3>Languages</h3>
+                <ul class="tools-list">
+                    <li>JavaScript</li>
+                    <li>HTML / CSS</li>
+                    <li>Python</li>
+                </ul>
+                <h3>Software Used</h3>
+                <ul class="tools-list">
+                    <li>Visual Studio</li>
+                    <li>Affinity Designer</li>
+                    <li>Affinity Publisher</li>
+                </ul>
+            </div>
+            <div class="main-content-area">
+                <h3>Project Launcher</h3>
+                <div class="project-gallery launcher-gallery">
+                    <div class="project-card">
+                        <div class="placeholder-image">Portfolio Site Icon</div>
+                        <h4>Portfolio Website V2</h4>
+                        <p>This interactive portfolio site. Built with HTML, CSS, and JavaScript.</p>
+                    </div>
+                    <div class="project-card">
+                        <div class="placeholder-image">Task App Icon</div>
+                        <h4>Task Management App</h4>
+                        <p>A React-based task manager with Firebase backend for real-time collaboration.</p>
+                    </div>
+                    <div class="project-card">
+                        <div class="placeholder-image">Data Analyzer Icon</div>
+                        <h4>Python Data Analyzer</h4>
+                        <p>A script to process and visualize CSV data using Python, Pandas, and Matplotlib.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-contact-trigger-container">
+            <button class="page-contact-button">Contact Me</button>
+        </div>
+        <div class="back-button-container"><button class="back-button" data-target-page="main">Back to Home</button></div>
+    </div>
+
+    <div id="design-detail" class="detail-page">
+        <h2>Design Portfolio</h2>
+        <p class="intro-paragraph">Immerse yourself in a portfolio of creative design solutions. This collection features UI/UX designs, branding, and illustrations, all crafted with a focus on aesthetics and user experience.</p>
+        <h3 class="collaborators-title">Collaborators</h3>
+        <div class="scrolling-collaborators-container">
+            <div class="scrolling-collaborators-track">
+                <svg viewBox="0 0 100 50"><circle cx="25" cy="25" r="20" /><rect x="50" y="10" width="40" height="30" rx="5"/></svg>
+                <svg viewBox="0 0 100 50"><polygon points="10,10 40,40 10,40" /><polygon points="50,10 80,10 65,40" /></svg>
+                <svg viewBox="0 0 100 50"><path d="M10 25 Q 25 10 40 25 T 70 25" stroke-width="5" stroke="currentColor" fill="transparent" /></svg>
+                <svg viewBox="0 0 100 50"><ellipse cx="30" cy="25" rx="20" ry="10"/><ellipse cx="70" cy="25" rx="10" ry="20"/></svg>
+                <svg viewBox="0 0 100 50"><rect x="10" y="10" width="20" height="30"/><rect x="40" y="10" width="20" height="30"/><rect x="70" y="10" width="20" height="30"/></svg>
+                <svg viewBox="0 0 100 50"><circle cx="25" cy="25" r="20" /><rect x="50" y="10" width="40" height="30" rx="5"/></svg>
+                <svg viewBox="0 0 100 50"><polygon points="10,10 40,40 10,40" /><polygon points="50,10 80,10 65,40" /></svg>
+                <svg viewBox="0 0 100 50"><path d="M10 25 Q 25 10 40 25 T 70 25" stroke-width="5" stroke="currentColor" fill="transparent" /></svg>
+                <svg viewBox="0 0 100 50"><ellipse cx="30" cy="25" rx="20" ry="10"/><ellipse cx="70" cy="25" rx="10" ry="20"/></svg>
+                <svg viewBox="0 0 100 50"><rect x="10" y="10" width="20" height="30"/><rect x="40" y="10" width="20" height="30"/><rect x="70" y="10" width="20" height="30"/></svg>
+            </div>
+        </div>
+        <div class="detail-page-content-wrapper">
+            <div class="main-content-area">
+                <h3>Featured Designs</h3>
+                <div class="project-gallery">
+                    <div class="project-card">
+                        <div class="placeholder-image">Mobile App UI Mockup</div>
+                        <h4>Mobile App UI: "Connect"</h4>
+                        <p>User interface design for a social networking application, focusing on intuitive navigation and a clean aesthetic.</p>
+                    </div>
+                    <div class="project-card">
+                        <div class="placeholder-image">Branding Mockup</div>
+                        <h4>Brand Identity: "EcoBloom"</h4>
+                        <p>Complete branding package for an eco-friendly startup, including logo, color palette, typography, and style guide.</p>
+                    </div>
+                     <div class="project-card">
+                        <div class="placeholder-image">Illustration Mockup</div>
+                        <h4>Illustrations: "Fantasia Series"</h4>
+                        <p>A series of digital illustrations for a fantasy book cover collection, focusing on mood and character.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-area">
+                <h3>Design Tools</h3>
+                <ul class="tools-list">
+                    <li>Affinity Designer</li>
+                    <li>Affinity Publisher</li>
+                    <li>Affinity Photo</li>
+                    <li>Google Icons (Resource)</li>
+                    <li>Mobbin (Research & Inspiration)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-contact-trigger-container">
+            <button class="page-contact-button">Contact Me</button>
+        </div>
+        <div class="back-button-container"><button class="back-button" data-target-page="main">Back to Home</button></div>
+    </div>
+
+    <div id="contact-overlay-modal">
+        <div class="contact-overlay-content">
+            <button class="close-contact-overlay">&times;</button>
+            <h2>Get In Touch</h2>
+            <p>I'm always open to discussing new projects, creative ideas, or opportunities. Feel free to reach out!</p>
+            <div class="contact-links">
+                <a href="mailto:youremail@example.com"><span class="material-symbols-outlined">mail</span> Email Me</a>
+                <a href="#" target="_blank"><span class="material-symbols-outlined">link</span> LinkedIn</a> 
+                <a href="#" target="_blank"><span class="material-symbols-outlined">code</span> GitHub</a>   
+            </div>
+            <p style="font-size: 0.8rem; margin-top: 25px; color: #aaa;">(Further contact methods or form can be added here)</p>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
